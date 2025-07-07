@@ -8,9 +8,15 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-      - name : Build the Docker image
+      - name : Build the Docker image dind
         run: docker build ./dind/ -t victorbecerra/dind:latest
       - name: Push docker image to Hub
         run: |
           docker login -u victorbecerra -p ${{ secrets.DOCKER_HUB_TOKEN }}
           docker push victorbecerra/dind:latest
+      - name : Build the Docker image auth-webhook
+        run: docker build ./authn-webhook/ -t victorbecerra/authn-webhook:v0.1
+      - name: Push docker image to Hub
+        run: |
+          docker login -u victorbecerra -p ${{ secrets.DOCKER_HUB_TOKEN }}
+          docker push victorbecerra/authn-webhook:v0.1
