@@ -14,9 +14,16 @@ jobs:
         run: |
           docker login -u victorbecerra -p ${{ secrets.DOCKER_HUB_TOKEN }}
           docker push victorbecerra/dind:latest
-      - name : Build the Docker image auth-webhook
+      - name : Build the Docker image authn-webhook
         run: docker build ./authn-webhook/ -t victorbecerra/authn-webhook:v0.1
       - name: Push docker image to Hub
         run: |
           docker login -u victorbecerra -p ${{ secrets.DOCKER_HUB_TOKEN }}
           docker push victorbecerra/authn-webhook:v0.1
+      - name : Build the Docker image authz-webhook
+        run: docker build ./authz-webhook/ -t victorbecerra/authz-webhook:v0.1
+      - name: Push docker image to Hub
+        run: |
+          docker login -u victorbecerra -p ${{ secrets.DOCKER_HUB_TOKEN }}
+          docker push victorbecerra/authz-webhook:v0.1          
+          
