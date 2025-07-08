@@ -13,4 +13,4 @@ RUN apk add gcompat
 WORKDIR /root
 COPY --from=builder /go/src/github.com/victorbecerragit/action-docker/authn-webhook/auth-webhook /usr/local/bin/authn-webhook
 
-CMD ["/app/auth-webhook"]
+CMD ["/app/authn-webhook"]
