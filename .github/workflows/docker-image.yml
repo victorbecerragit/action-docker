@@ -1,29 +1,57 @@
 name: Build and Push to Docker Hub
 on:
-  [workflow_dispatch]
-  
+  push:
+    branches:
+      - main
+      
 jobs:
   publish_images:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: checkout repository
         uses: actions/checkout@v4
-      - name : Build the Docker image dind
-        run: docker build ./dind/ -t victorbecerra/dind:latest
-      - name: Push docker image to Hub
-        run: |
-          docker login -u victorbecerra -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push victorbecerra/dind:latest
-      - name : Build the Docker image authn-webhook
-        run: docker build ./authn-webhook/ -t victorbecerra/authn-webhook:v0.1
-      - name: Push docker image to Hub
-        run: |
-          docker login -u victorbecerra -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push victorbecerra/authn-webhook:v0.1
-      - name : Build the Docker image authz-webhook
-        run: docker build ./authz-webhook/ -t victorbecerra/authz-webhook:v0.1
-      - name: Push docker image to Hub
-        run: |
-          docker login -u victorbecerra -p ${{ secrets.DOCKER_HUB_TOKEN }}
-          docker push victorbecerra/authz-webhook:v0.1          
+
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: victorbecerra
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+
+      - name: Cache Docker layers
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-docker-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-docker-
+            
+      - name: Build and push dind image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./dind
+          push: true
+          tags: victorbecerra/dind:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+
+      - name: Build and push authn-webhook image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./authn-webhook
+          push: true
+          tags: victorbecerra/authn-webhook:v0.1
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+
+      - name: Build and push authz-webhook image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./authz-webhook
+          push: true
+          tags: victorbecerra/authz-webhook:v0.1
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache        
           
