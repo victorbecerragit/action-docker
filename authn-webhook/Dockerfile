@@ -12,6 +12,7 @@ RUN go build -o authn-webhook ./main.go
 FROM alpine:3.13.5
 RUN apk add gcompat
 WORKDIR /root
-COPY --from=builder /go/src/github.com/victorbecerragit/action-docker/authn-webhook/auth-webhook /usr/local/bin/authn-webhook
+#COPY --from=builder /go/src/github.com/victorbecerragit/action-docker/authn-webhook/auth-webhook /usr/local/bin/authn-webhook
+COPY --from=builder /app/authn-webhook /usr/local/bin/authn-webhook
 
 CMD ["/app/authn-webhook"]
