@@ -1,7 +1,8 @@
 # Build the binary
 FROM golang:1.23 AS builder
 
-WORKDIR /go/src/github.com/victorbecerragit/action-docker/authn-webhook
+#WORKDIR /go/src/github.com/victorbecerragit/action-docker/authn-webhook
+WORKDIR /app
 COPY go.mod go.mod
 COPY go.sum go.sum
 COPY main.go main.go
