@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export TERM=dumb
+export NO_COLOR=1
+
 set -euo pipefail  # Exit on error, undefined vars, pipe failures
 
 # Configuration from environment variables
