@@ -28,14 +28,14 @@ if kubectl directpv discover --timeout="$WAIT_TIME" --output-file drives-discove
 else
     # Do not exit, allow handling downstream
     # Capture stderr into a variable
-    init_output=$(kubectl directpv discover --output-file drives-discovery-all-nodes.yaml 2>&1)
+    #init_output=$(kubectl directpv discover --output-file drives-discovery-all-nodes.yaml 2>&1)
     # Check for specific "no drives" message in output
-            if echo "$init_output" | grep -q "No drives are available to initialize"; then
-                log "No drives to initialize, continuing without error"
-            else
-                log "ERROR: Drive discovery command failed"
-                log "Details: $init_output"
-            fi
+    #        if echo "$init_output" | grep -q "No drives are available to initialize"; then
+    #            log "No drives to initialize, continuing without error"
+    #        else
+    #            log "ERROR: Drive discovery command failed"
+    #            log "Details: $init_output"
+    #        fi
     exit 0
 fi
 
