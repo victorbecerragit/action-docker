@@ -53,13 +53,13 @@ jobs:
           push: true
           tags: victorbecerra/authz-webhook:v0.1
           cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache        
-          
-      - name: Build and push kubectl-directpv image
+          cache-to: type=local,dest=/tmp/.buildx-cache
+
+      - name: Build and push directpv-discover image
         uses: docker/build-push-action@v5
         with:
           context: ./kubectl-directpv
           push: true
-          tags: victorbecerra/kubectl-directpv:v4.1.5
+          tags: victorbecerra/directpv-discover:v4.1.5
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
