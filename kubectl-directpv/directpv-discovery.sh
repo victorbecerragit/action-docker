@@ -27,7 +27,7 @@ fi
 # Initialize drives if dangerous mode is enabled
 if [ "$DANGEROUS_MODE" = "true" ]; then
     log "Initializing drives (dangerous mode enabled)"
-    if kubectl directpv init "drives-discovery-all-nodes.yaml" --dangerous; then
+    if kubectl directpv --quiet init "drives-discovery-all-nodes.yaml" --dangerous; then
         log "Drive initialization completed successfully"
     else
         log "ERROR: Drive initialization failed"
