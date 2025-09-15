@@ -7,6 +7,7 @@ set -euo pipefail  # Exit on error, undefined vars, pipe failures
 
 # Configuration from environment variables
 DANGEROUS_MODE="${DANGEROUS_MODE:-false}"
+WAIT_TIME="${WAIT_TIME:-5m}"
 
 # Logging function
 log() {
@@ -17,7 +18,7 @@ log "Starting DirectPV setup for all nodes"
 
 # Discover drives
 log "Discovering drives on all nodes"
-if kubectl directpv discover --output-file drives-discovery-all-nodes.yaml; then
+if kubectl directpv discover --timeout=$WAIT_TIME --output-file drives-discovery-all-nodes.yaml; then
     log "Drive discovery completed"
 else
     log "ERROR: Drive discovery failed"
