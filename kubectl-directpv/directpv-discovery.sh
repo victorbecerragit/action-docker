@@ -36,6 +36,7 @@ else
                 log "ERROR: Drive discovery command failed"
                 log "Details: $init_output"
             fi
+    exit 0
 fi
 
 # Initialize drives if dangerous mode is enabled and discovery file is not empty
