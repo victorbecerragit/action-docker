@@ -33,11 +33,22 @@ fi
 if [ "$DANGEROUS_MODE" = "true" ]; then
     if [ -s drives-discovery-all-nodes.yaml ]; then
         log "Initializing drives (dangerous mode enabled)"
-        if kubectl directpv --quiet init "drives-discovery-all-nodes.yaml" --dangerous; then
-            log "Drive initialization completed successfully"
+        
+        # Capture stderr into a variable
+        init_output=$(kubectl directpv --quiet init "drives-discovery-all-nodes.yaml" --dangerous 2>&1)
+        init_exit_code=$?
+        
+        # Check for specific "no drives" message in output
+        if [[ $init_exit_code -ne 0 ]]; then
+            if echo "$init_output" | grep -q "No drives are available to initialize"; then
+                log "No drives to initialize, continuing without error"
+            else
+                log "ERROR: Drive initialization failed"
+                log "Details: $init_output"
+                # Optionally exit or handle error
+            fi
         else
-            log "ERROR: Drive initialization failed, check the drives-discovery-all-nodes.yaml file"
-            # Do not exit, can handle failure later or log for alerting
+            log "Drive initialization completed successfully"
         fi
     else
         log "Skipping drive initialization since no drives were discovered"
