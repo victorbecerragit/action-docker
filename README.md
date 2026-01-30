@@ -1,5 +1,43 @@
 # action-docker
 
-sample repo to build and tag docker container , sample docker in docker with additional commands. (dind)
+This repository demonstrates automated Docker image building and publishing to Docker Hub using GitHub Actions.
 
-Sample docker build for webhook app. (authn-webhook)
+## Overview
+
+The project contains multiple containerized services related to Kubernetes authentication and authorization, with automated CI/CD pipelines that build and push Docker images on every push to the `main` branch.
+
+## What This Project Does
+
+### GitHub Actions Automation
+
+A GitHub Actions workflow (`.github/workflows/docker-image.yml`) automatically:
+
+1. **Triggers on code push** to the `main` branch
+2. **Sets up Docker Buildx** for multi-platform builds
+3. **Authenticates with Docker Hub** using encrypted credentials
+4. **Caches Docker layers** to optimize build times
+5. **Builds and pushes 4 Docker images** to Docker Hub:
+   - `dind` - Docker-in-Docker environment with additional commands
+   - `authn-webhook` - Kubernetes authentication webhook service
+   - `authz-webhook` - Kubernetes authorization webhook service
+   - `directpv-discover` - DirectPV discovery tool
+
+### Project Components
+
+- **authn-webhook**: A simple HTTP server implementing Kubernetes token-based authentication webhook for the kube-apiserver
+- **authz-webhook**: A simple HTTP server implementing Kubernetes authorization webhook for the kube-apiserver
+- **dind**: Docker-in-Docker container with extended functionality
+- **kubectl-directpv**: DirectPV discovery service for Kubernetes persistent volumes
+
+## How It Works
+
+When you push to `main`:
+1. GitHub Actions automatically triggers the workflow
+2. Docker images are built using the Dockerfile in each service directory
+3. Images are tagged with version information
+4. All images are pushed to Docker Hub at `victorbecerra/[service-name]`
+5. Build layers are cached to speed up subsequent builds
+
+## Learning Context
+
+These components are based on exercises from "Programming with Kubernetes" (educative.io) and demonstrate webhook implementations for Kubernetes API server authentication and authorization flows.
