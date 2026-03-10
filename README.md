@@ -44,6 +44,8 @@ When you push to `main`:
 
 ## Weekly Kube CVE Trends
 
+This section is updated weekly by a GitHub Actions workflow that pulls the latest Kubernetes vulnerability results and writes a short report into the README.
+
 <!-- KUBE_CVEs_START -->
 Last updated: 2026-03-10 (UTC)
 
