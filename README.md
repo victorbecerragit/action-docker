@@ -16,11 +16,13 @@ A GitHub Actions workflow (`.github/workflows/docker-image.yml`) automatically:
 2. **Sets up Docker Buildx** for multi-platform builds
 3. **Authenticates with Docker Hub** using encrypted credentials
 4. **Caches Docker layers** to optimize build times
-5. **Builds and pushes 4 Docker images** to Docker Hub:
+5. **Builds and pushes 6 Docker images** to Docker Hub:
    - `dind` - Docker-in-Docker environment with additional commands
    - `authn-webhook` - Kubernetes authentication webhook service
    - `authz-webhook` - Kubernetes authorization webhook service
    - `directpv-discover` - DirectPV discovery tool
+   - `serp-api-python` - Python SERP API service image
+   - `serp-api-go` - Go SERP API service image
 
 ### Project Components
 
@@ -28,13 +30,15 @@ A GitHub Actions workflow (`.github/workflows/docker-image.yml`) automatically:
 - **authz-webhook**: A simple HTTP server implementing Kubernetes authorization webhook for the kube-apiserver
 - **dind**: Docker-in-Docker container with extended functionality
 - **kubectl-directpv**: DirectPV discovery service for Kubernetes persistent volumes
+- **serp-api**: Python-based SERP API service
+- **serp-api/go-serp**: Go-based SERP API service
 
 ## How It Works
 
 When you push to `main`:
 1. GitHub Actions automatically triggers the workflow
 2. Docker images are built using the Dockerfile in each service directory
-3. Images are tagged with version information
+3. Images are tagged with either fixed versions or `latest`, depending on the service
 4. All images are pushed to Docker Hub at `victorbecerra/[service-name]`
 5. Build layers are cached to speed up subsequent builds
 

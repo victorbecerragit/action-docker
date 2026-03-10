@@ -63,3 +63,21 @@ jobs:
           tags: victorbecerra/directpv-discover:v4.1.5
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
+
+      - name: Build and push serp-api Python image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./serp-api
+          push: true
+          tags: victorbecerra/serp-api-python:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+
+      - name: Build and push serp-api Go image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./serp-api/go-serp
+          push: true
+          tags: victorbecerra/serp-api-go:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
