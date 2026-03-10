@@ -42,6 +42,14 @@ When you push to `main`:
 4. All images are pushed to Docker Hub at `victorbecerra/[service-name]`
 5. Build layers are cached to speed up subsequent builds
 
+## Weekly Kube CVE Trends
+
+<!-- KUBE_CVEs_START -->
+Last updated: not yet generated
+
+- Pending first run
+<!-- KUBE_CVEs_END -->
+
 ## Learning Context
 
 These components are based on exercises from "Programming with Kubernetes" (educative.io) and demonstrate webhook implementations for Kubernetes API server authentication and authorization flows.
