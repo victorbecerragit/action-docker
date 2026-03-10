@@ -45,9 +45,17 @@ When you push to `main`:
 ## Weekly Kube CVE Trends
 
 <!-- KUBE_CVEs_START -->
-Last updated: not yet generated
+Last updated: 2026-03-10 (UTC)
 
-- Pending first run
+- [Official CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) — CVE-2019-11254, kube-apiserver Denial of Service vulnerability from malicious YAML payloads, #89535 ; CVE-2020-8552, apiserver DoS (oom), #89378 ; CVE-2020-8551
+- [Kubernetes CVEs and Security Vulnerabilities - OpenCVE](https://app.opencve.io/cve/?vendor=kubernetes) — Explore the latest vulnerabilities and security issues of Kubernetes in the CVE database.
+- [Security bulletins | Google Kubernetes Engine (GKE)](https://docs.cloud.google.com/kubernetes-engine/security-bulletins) — The Kubernetes project recently announced a new security vulnerability, CVE-2021-25735, that could allow node updates to bypass a Validating Admission ...
+- [OWASP Kubernetes Top Ten](https://owasp.org/www-project-kubernetes-top-ten/) — Draft Top 10 Kubernetes Risks - 2025 · K01: Insecure Workload Configurations · K02: Overly Permissive Authorization Configurations · K03: Secrets Management
+- [Top 10 Kubernetes Security Issues](https://www.sentinelone.com/cybersecurity-101/cloud-security/kubernetes-security-issues/) — Some notable Kubernetes vulnerabilities that have been discovered in recent years include: CVE-2018-1002105: A critical flaw in the Kubernetes ...
+- [Kubernetes and AI Workloads Under Attack By VoidLink ...](https://cyberpress.org/voidlink-malware-targets-kubernetes/) — In December 2025, Check Point Research disclosed a troubling new threat: VoidLink, a sophisticated malware framework designed to target cloud ...
+- [Latest Kubernetes Vulnerabilities](https://feedly.com/cve/vendors/kubernetes) — Track the latest Kubernetes vulnerabilities and their associated exploits, patches, CVSS and EPSS scores, proof of concept, links to malware, threat actors, ...
+- [CVE Kubernetes Vulnerability Database - ARMO](https://www.armosec.io/cve-vulnerability-database/) — 3 new NGINX ingress controller vulnerabilities. CVE-2023-5043, CVE-2023-5044 and CVE-2022-4886. Oct 27, 2023 - Three security issues were reported by the ...
+- [Kubernetes Ingress-NGINX Controller vulnerabilities](https://www.runzero.com/blog/k8s-ingress-nginx-controller/) — Three of the vulnerabilities relate to validation and sanitation of user-controlled fields (CVE-2026-24512, CVE-2026-24513, and ...
 <!-- KUBE_CVEs_END -->
 
 ## Learning Context
