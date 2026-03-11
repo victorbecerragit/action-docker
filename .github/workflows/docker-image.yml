@@ -81,3 +81,12 @@ jobs:
           tags: victorbecerra/serp-api-go:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
+
+      - name: Build and push mcp-scraper image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./mcp-scraper
+          push: true
+          tags: victorbecerra/mcp-scraper:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
