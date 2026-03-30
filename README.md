@@ -49,18 +49,18 @@ When you push to `main`:
 This section is updated weekly by a GitHub Actions workflow that pulls the latest Kubernetes vulnerability results and writes a short report into the README.
 
 <!-- KUBE_CVEs_START -->
-Last updated: 2026-03-23 (UTC)
+Last updated: 2026-03-30 (UTC)
 
 - [Official CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) — FEATURE STATE: Kubernetes v1.27 \[beta\] This is a community maintained list of official CVEs announced by the Kubernetes Security Response Committee.
-- [Kubernetes Kubernetes security vulnerabilities, ...](https://www.cvedetails.com/product/34016/Kubernetes-Kubernetes.html?vendor_id=15867) — This page lists vulnerability statistics for all versions of Kubernetes » Kubernetes. Vulnerability statistics provide a quick overview for security ...
+- [\[4-1\] CVE details on Kubernetes](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html) — No information is available for this page.
 - [Kubernetes CVEs and Security Vulnerabilities - OpenCVE](https://app.opencve.io/cve/?vendor=kubernetes) — Explore the latest vulnerabilities and security issues of Kubernetes in the CVE database.
 - [kubernetes vulnerabilities](https://security.snyk.io/package/linux/debian%3A11/kubernetes) — Fix vulnerabilities automatically ; H · CVE-2022-3294. <1.20.5+really1.20.2-1 ; M · Directory Traversal. <1.20.5+really1.20.2-1 ; H · Server-Side Request For
 - [Security bulletins | Google Kubernetes Engine (GKE)](https://docs.cloud.google.com/kubernetes-engine/security-bulletins) — The Kubernetes project recently announced a new security vulnerability, CVE-2021-25735, that could allow node updates to bypass a Validating Admission ...
 - [Top 10 Kubernetes Security Issues](https://www.sentinelone.com/cybersecurity-101/cloud-security/kubernetes-security-issues/) — Some notable Kubernetes vulnerabilities that have been discovered in recent years include: CVE-2018-1002105: A critical flaw in the Kubernetes ...
+- [2022 Kubernetes Vulnerabilities – Main Takeaways](https://www.armosec.io/blog/kubernetes-vulnerabilities-2022/) — Where to Look for Kubernetes Vulnerabilities? · ​​Denial of Service · Privilege Escalation · Bypass Something · Buffer Overflows · Arbitrary Code Execu
 - [Latest Kubernetes Vulnerabilities](https://feedly.com/cve/vendors/kubernetes) — Track the latest Kubernetes vulnerabilities and their associated exploits, patches, CVSS and EPSS scores, proof of concept, links to malware, threat actors, ...
-- [Hidden Vulnerabilities In Kubernetes Clusters](https://accuknox.com/blog/kubernetes-clusters-hidden-vulnerabilities) — TL;DR. CNAPPs miss Kubernetes-specific risks like RBAC misconfigurations, weak network policies, and insecure secrets.
-- [2022 Kubernetes Vulnerabilities – Main Takeaways - ARMO](https://www.armosec.io/blog/kubernetes-vulnerabilities-2022/) — All the main K8s vulnerabilities from 2022 consolidated into one article. Put together by Ben Hirschberg, CTO & co-founder of ARMO, the makers of Kubescape.
-- [Security bulletins for Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/security-bulletins/overview) — The bulletin provides an update regarding the recent vulnerabilities (CVE-2025-31133, CVE-2025-52565, CVE-2025-52881) disclosed from runc.
+- [Security bulletins for Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/security-bulletins/overview) — Several security vulnerabilities affecting the Kubernetes nginx ingress controller were disclosed on March 24, 2025: CVE-2025-1098 (High), CVE-2025-1974 ( ...
+- [Kubernetes Security in 2026: Risks, Rewards & Resilience ...](https://n2ws.com/blog/kubernetes-security) — Securing Kubernetes starts with software supply chain risks at the code and image level. Application code and container images can carry ...
 <!-- KUBE_CVEs_END -->
 
 ## Learning Context
