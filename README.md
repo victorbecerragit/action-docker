@@ -49,15 +49,15 @@ When you push to `main`:
 This section is updated weekly by a GitHub Actions workflow that pulls the latest Kubernetes vulnerability results and writes a short report into the README.
 
 <!-- KUBE_CVEs_START -->
-Last updated: 2026-07-20 (UTC)
+Last updated: 2026-07-27 (UTC)
 
 - [Official CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) — Kubernetes API Server JSON/YAML parsing vulnerable to resource exhaustion attack, #83253 · CVE-2019-11250, Bearer tokens are revealed in logs (audit finding TO
 - [Top 10 Kubernetes Security Issues](https://www.sentinelone.com/cybersecurity-101/cloud-security/kubernetes-security-issues/) — Some notable Kubernetes vulnerabilities that have been discovered in recent years include: CVE-2018-1002105: A critical flaw in the Kubernetes ...
 - [Kubernetes Security Vulnerabilities | Top Risks](https://www.aikido.dev/blog/kubernetes-security-vulnerabilities) — Learn the most critical Kubernetes security vulnerabilities, common misconfigurations, and why clusters are often exposed by default.
 - [Understanding Current Threats to Kubernetes Environments](https://unit42.paloaltonetworks.com/modern-kubernetes-threats/) — In the recent exploitation of React2Shell (CVE-2025-55182), threat actors gained code execution inside containers, including Kubernetes, through ...
 - [The Top 5 Kubernetes CVEs of 2024: Have You Patched ...](https://www.fairwinds.com/blog/the-top-5-high-critical-kubernetes-cves-of-2024-have-you-patched-them-yet) — First disclosed on March 29, 2024, CVE-2024-3094 was last modified on November 21, 2024 and reported by Red Hat, Inc. The base score for this ...
+- [Understanding & Securing Kubernetes: Key Vulnerabilities](https://www.upwind.io/glossary/what-are-kubernetes-vulnerabilities) — Kubernetes has had 326 identified vulnerabilities added to the Common Vulnerabilities and Exposures (CVE) database. In 2024 alone, 52 vulnerabilities of all ...
 - [Kubernetes CVEs and Security Vulnerabilities - OpenCVE](https://app.opencve.io/cve/?vendor=kubernetes) — Explore the latest vulnerabilities and security issues of Kubernetes in the CVE database. 2026-06-01 3.1 Low A security issue was discovered with Kubernetes. ..
-- [CVE Kubernetes Vulnerability Database - ARMO](https://www.armosec.io/cve-vulnerability-database/) — 3 new NGINX ingress controller vulnerabilities CVE-2023-5043, CVE-2023-5044 and CVE-2022-4886 Oct 27, 2023 - Three security issues were reported by the ...
 - [Unpatchable Vulnerabilities of Kubernetes: CVE-2020-8554](https://securitylabs.datadoghq.com/articles/unpatchable-kubernetes-vulnerabilities-cve-2020-8554/) — The first of our unpatchable four vulnerabilities is CVE-2020-8554, Traffic hijacking with CVE-2020-8554
 <!-- KUBE_CVEs_END -->
 
