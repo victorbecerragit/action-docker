@@ -49,17 +49,17 @@ When you push to `main`:
 This section is updated weekly by a GitHub Actions workflow that pulls the latest Kubernetes vulnerability results and writes a short report into the README.
 
 <!-- KUBE_CVEs_START -->
-Last updated: 2026-08-31 (UTC)
+Last updated: 2026-09-07 (UTC)
 
 - [Official CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) — Kubernetes API Server JSON/YAML parsing vulnerable to resource exhaustion attack, #83253 · CVE-2019-11250, Bearer tokens are revealed in logs (audit finding TO
-- [Top 10 Kubernetes Security Issues](https://www.sentinelone.com/cybersecurity-101/cloud-security/kubernetes-security-issues/) — CVE-2018-1002105: A critical flaw. Kubernetes security concerns include API server exposure, misconfigured RBAC, unscanned container images,
+- [Top 10 Kubernetes Security Issues](https://www.sentinelone.com/cybersecurity-101/cloud-security/kubernetes-security-issues/) — Some notable Kubernetes vulnerabilities that have been discovered in recent years include: CVE-2018-1002105: A critical flaw in the Kubernetes ...
 - [Kubernetes Security Vulnerabilities | Top Risks](https://www.aikido.dev/blog/kubernetes-security-vulnerabilities) — Learn the most critical Kubernetes security vulnerabilities, common misconfigurations, and why clusters are often exposed by default.
-- [Understanding Current Threats to Kubernetes Environments](https://unit42.paloaltonetworks.com/modern-kubernetes-threats/) — Our telemetry reveals that Kubernetes-related threat actor operations, including stealing Kubernetes tokens, increased 282% over the last year.
 - [How to manage three top Kubernetes security vulnerabilities](https://www.cncf.io/blog/2025/02/18/how-to-manage-three-top-kubernetes-security-vulnerabilities/) — A step-by-step look at managing and/or mitigating the three top Kubernetes security vulnerabilities.
-- [The Top 5 Kubernetes CVEs of 2024: Have You Patched ...](https://www.fairwinds.com/blog/the-top-5-high-critical-kubernetes-cves-of-2024-have-you-patched-them-yet) — First disclosed on March 29, 2024, CVE-2024-3094 was last modified on November 21, 2024 and reported by Red Hat, Inc. The base score for this ...
+- [Understanding Current Threats to Kubernetes Environments](https://unit42.paloaltonetworks.com/modern-kubernetes-threats/) — Our telemetry reveals that Kubernetes-related threat actor operations, including stealing Kubernetes tokens, increased 282% over the last year.
+- [Kubernetes CVEs and Security Vulnerabilities - OpenCVE](https://app.opencve.io/cve/?vendor\u003dkubernetes) — Explore the latest vulnerabilities and security issues of Kubernetes in the CVE database. (130 CVEs found) CVE-2026-15687 1 Kubernetes. CVE-2023-7325
 - [CVE Kubernetes Vulnerability Database - ARMO Platform](https://www.armosec.io/cve-vulnerability-database/) — 3 new NGINX ingress controller vulnerabilities CVE-2023-5043, CVE-2023-5044 and CVE-2022-4886 Oct 27, 2023 - Three security issues were reported by the ...
+- [The Top 5 Kubernetes CVEs of 2024: Have You Patched ...](https://www.fairwinds.com/blog/the-top-5-high-critical-kubernetes-cves-of-2024-have-you-patched-them-yet) — First disclosed on March 29, 2024, CVE-2024-3094 was last modified on November 21, 2024 and reported by Red Hat, Inc. The base score for this ...
 - [kubernetes-1.30](https://security.snyk.io/package/linux/chainguard%3Alatest/kubernetes-1.30) — Direct Vulnerabilities. Known vulnerabilities in the kubernetes-1.30 package. This does not include vulnerabilities belonging to this package's dependencies.
-- [Understanding & Securing Kubernetes: Key Vulnerabilities](https://www.upwind.io/glossary/what-are-kubernetes-vulnerabilities) — Essential Kubernetes Vulnerability Lessons · API Server Exploits (CVE-2019-11247) · Pod Security Bypass (CVE-2020-8554) · Container Escapes (CVE-2021-25741)
 <!-- KUBE_CVEs_END -->
 
 ## Learning Context
