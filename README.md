@@ -49,17 +49,17 @@ When you push to `main`:
 This section is updated weekly by a GitHub Actions workflow that pulls the latest Kubernetes vulnerability results and writes a short report into the README.
 
 <!-- KUBE_CVEs_START -->
-Last updated: 2026-09-14 (UTC)
+Last updated: 2026-09-21 (UTC)
 
 - [Official CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) — Kubernetes API Server JSON/YAML parsing vulnerable to resource exhaustion attack, #83253 · CVE-2019-11250, Bearer tokens are revealed in logs (audit finding TO
-- [How to manage three top Kubernetes security vulnerabilities](https://www.cncf.io/blog/2025/02/18/how-to-manage-three-top-kubernetes-security-vulnerabilities/) — A step-by-step look at managing and/or mitigating the three top Kubernetes security vulnerabilities.
-- [Understanding and Mitigating Kubernetes Vulnerabilities](https://www.upwind.io/glossary/what-are-kubernetes-vulnerabilities) — Upgrade Kubernetes to the latest version to patch known vulnerabilities. Implement runtime security tools to monitor container activity and detect anomalies ...
 - [Top 10 Kubernetes Security Issues](https://www.sentinelone.com/cybersecurity-101/cloud-security/kubernetes-security-issues/) — Some notable Kubernetes vulnerabilities that have been discovered in recent years include: CVE-2018-1002105: A critical flaw in the Kubernetes ...
+- [How to manage three top Kubernetes security vulnerabilities](https://www.cncf.io/blog/2025/02/18/how-to-manage-three-top-kubernetes-security-vulnerabilities/) — A step-by-step look at managing and/or mitigating the three top Kubernetes security vulnerabilities.
+- [Kubernetes CVEs and Security Vulnerabilities - OpenCVE](https://app.opencve.io/cve/?vendor=kubernetes) — Explore the latest vulnerabilities and security issues of Kubernetes in the CVE database. CVE-2026-35469. CVE-2026-15687 1 Kubernetes. CVE-2023-7325. CVE-2020-
+- [Understanding and Mitigating Kubernetes Vulnerabilities](https://www.upwind.io/glossary/what-are-kubernetes-vulnerabilities) — Upgrade Kubernetes to the latest version to patch known vulnerabilities. Implement runtime security tools to monitor container activity and detect anomalies ...
+- [CVE Kubernetes Vulnerability Database - ARMO Platform](https://www.armosec.io/cve-vulnerability-database/) — 3 new NGINX ingress controller vulnerabilities CVE-2023-5043, CVE-2023-5044 and CVE-2022-4886 Oct 27, 2023 - Three security issues were reported by the ...
 - [The Top 5 Kubernetes CVEs of 2024: Have You Patched ...](https://www.fairwinds.com/blog/the-top-5-high-critical-kubernetes-cves-of-2024-have-you-patched-them-yet) — First disclosed on March 29, 2024, CVE-2024-3094 was last modified on November 21, 2024 and reported by Red Hat, Inc. The base score for this ...
-- [CVE Kubernetes Vulnerability Database - ARMO Platform](https://www.armosec.io/cve-vulnerability-database/) — 3 new NGINX ingress controller vulnerabilities. CVE-2023-5043, CVE-2023-5044 and CVE-2022-4886. Oct 27, 2023 - Three security issues were reported by the ...
 - [Kubernetes Security Vulnerabilities | Top Risks](https://www.aikido.dev/blog/kubernetes-security-vulnerabilities) — Learn the most critical Kubernetes security vulnerabilities, common misconfigurations, and why clusters are often exposed by default.
-- [kubernetes-1.30](https://security.snyk.io/package/linux/chainguard%3Alatest/kubernetes-1.30) — Direct Vulnerabilities. Known vulnerabilities in the kubernetes-1.30 package. This does not include vulnerabilities belonging to this package's dependencies.
-- [Unpatchable Vulnerabilities of Kubernetes: CVE-2020-8562](https://securitylabs.datadoghq.com/articles/unpatchable-kubernetes-vulnerabilities-cve-2020-8562/) — A look at how Kubernetes CVE-2020-8562 allows attackers to bypass API server proxy protections using DNS rebinding.
+- [Unpatchable Vulnerabilities of Kubernetes: CVE-2020-8554](https://securitylabs.datadoghq.com/articles/unpatchable-kubernetes-vulnerabilities-cve-2020-8554/) — The first of our unpatchable four vulnerabilities is CVE-2020-8554, which was originally discovered by Etienne Champetier. This vulnerability ...
 <!-- KUBE_CVEs_END -->
 
 ## Learning Context
