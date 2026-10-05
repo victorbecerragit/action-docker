@@ -49,17 +49,16 @@ When you push to `main`:
 This section is updated weekly by a GitHub Actions workflow that pulls the latest Kubernetes vulnerability results and writes a short report into the README.
 
 <!-- KUBE_CVEs_START -->
-Last updated: 2026-09-28 (UTC)
+Last updated: 2026-10-05 (UTC)
 
-- [Weekly: Show off your new tools and projects thread](https://www.reddit.com/r/kubernetes/comments/1whswpp/weekly_show_off_your_new_tools_and_projects_thread/) — I am working on a feature now to filter between vulnerabilities in OS/base layer images and the application layer of the image. I belive this ...
-- [CVE-2025-5187: Kubernetes Privilege Escalation ...](https://www.sentinelone.com/vulnerability-database/cve-2025-5187/) — CVE-2025-5187 is a privilege escalation vulnerability in Kubernetes. Learn about its impact, affected versions, and mitigation methods.
-- [Known Vulnerabilities | Kubernetes Documentation](https://teuto.net/k8s/docs/managed-kubernetes/known-vulnerabilities/) — Description: CVE-2026-43284 and CVE-2026-43500, collectively referred to as “Dirty Frag”, affect Linux kernel networking-related components, including IPsec
-- [Vulnerability scans on Kubernetes with Pipeline](https://outshift.cisco.com/blog/in-depth-tech/container-vulnerability-scans) — Over 80% of the latest versions of official images publicly available on Docker Hub contained at least one high severity vulnerability! How ...
-- [Kubernetes gatekeeper platform at risk from new flaws](https://www.sdxcentral.com/news/kubernetes-gatekeeper-platform-at-risk-from-new-flaws/) — Vulnerabilities have been discovered in the Ingress-Nginx Kubernetes gatekeeper platform ahead of its planned obsolescence.
-- [\[Security Advisory\] CVE-2025-4563: Nodes can bypass ...](https://groups.google.com/g/kubernetes-security-announce/c/Zv84LMRuvMQ) — A vulnerability exists in the NodeRestriction admission controller where nodes can bypass dynamic resource allocation authorization checks. When ...
-- [Vulnerable Azure Kubernetes Service should be updated ...](https://learn.microsoft.com/en-us/answers/questions/5982526/vulnerable-azure-kubernetes-service-should-be-upda) — Azure Defender for Cloud reports: "Vulnerable Azure Kubernetes Service should be updated to resolve vulnerability findings".
-- [aquasecurity/vuln-list-k8s: k8s vulnerability advisory](https://github.com/aquasecurity/vuln-list-k8s) — k8s vulnerability advisory. Contribute to aquasecurity/vuln-list-k8s development by creating an account on GitHub.
-- [A container image that passed our vulnerability scan ...](https://www.reddit.com/r/kubernetes/comments/1vqla0g/a_container_image_that_passed_our_vulnerability/) — We scan images in CI and gate on criticals like everyone. An image passed clean, we shipped it. About 3 weeks later that same image, ...
+- [Kubernetes](https://kubernetes.io/) — Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized applications.
+- [Kubernetes](https://en.wikipedia.org/wiki/Kubernetes) — Kubernetes also known as K8s, is an open-source container orchestration system for automating software deployment, scaling, and management.
+- [I still don't understand what Kubernetes is : r/devops](https://www.reddit.com/r/devops/comments/rs6cim/i_still_dont_understand_what_kubernetes_is/) — K8s is a way to keep your docker containers up. If the containers become unhealthy, k8s can take them out behind the barn and shoot them, ...
+- [Kubernetes (K8s)](https://github.com/kubernetes/kubernetes) — Advanced SecurityFind and fix vulnerabilities Code securitySecure your code as you build Secret protectionStop leaks before they start. Kubernetes, also known .
+- [What is Kubernetes?](https://www.redhat.com/en/topics/containers/what-is-kubernetes) — A Kubernetes deployment should be: Secure. It should follow the latest security best-practices. User-friendly. It should be operable using a few ...
+- [Docker Compose vs Kubernetes setup for Spark](https://forums.developer.nvidia.com/t/docker-compose-vs-kubernetes-setup-for-spark/372636) — Most people are using spark-vllm-docker and sparkrun. Kubernetes is overkill unless you have a bigger ecosystem you are integrating with.
+- [Solved: Dynatrace Distributed Tracing on Kubernetes](https://community.dynatrace.com/t5/Container-platforms/Dynatrace-Distributed-Tracing-on-Kubernetes/m-p/245841) — Solved: Hey! I have deployed the Dynatrace operator on Kubernetes (cloud native approach), and I am able to see my Kubernetes cluster on my dashboard.
+- [Kubernetes Tutorial: From Zero to Deployed (100% FREE)](https://www.youtube.com/watch?v=IluVqhoCChw&xstg=CAMSBhUD_LL2Hw%3D%3D) — Kubernetes seems scary? Not anymore. I'll take you from ZERO to deploying your first app - completely FREE. No credit card.
 <!-- KUBE_CVEs_END -->
 
 ## Learning Context
