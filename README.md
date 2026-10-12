@@ -49,16 +49,17 @@ When you push to `main`:
 This section is updated weekly by a GitHub Actions workflow that pulls the latest Kubernetes vulnerability results and writes a short report into the README.
 
 <!-- KUBE_CVEs_START -->
-Last updated: 2026-10-05 (UTC)
+Last updated: 2026-10-12 (UTC)
 
-- [Kubernetes](https://kubernetes.io/) — Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized applications.
-- [Kubernetes](https://en.wikipedia.org/wiki/Kubernetes) — Kubernetes also known as K8s, is an open-source container orchestration system for automating software deployment, scaling, and management.
-- [I still don't understand what Kubernetes is : r/devops](https://www.reddit.com/r/devops/comments/rs6cim/i_still_dont_understand_what_kubernetes_is/) — K8s is a way to keep your docker containers up. If the containers become unhealthy, k8s can take them out behind the barn and shoot them, ...
-- [Kubernetes (K8s)](https://github.com/kubernetes/kubernetes) — Advanced SecurityFind and fix vulnerabilities Code securitySecure your code as you build Secret protectionStop leaks before they start. Kubernetes, also known .
-- [What is Kubernetes?](https://www.redhat.com/en/topics/containers/what-is-kubernetes) — A Kubernetes deployment should be: Secure. It should follow the latest security best-practices. User-friendly. It should be operable using a few ...
-- [Docker Compose vs Kubernetes setup for Spark](https://forums.developer.nvidia.com/t/docker-compose-vs-kubernetes-setup-for-spark/372636) — Most people are using spark-vllm-docker and sparkrun. Kubernetes is overkill unless you have a bigger ecosystem you are integrating with.
-- [Solved: Dynatrace Distributed Tracing on Kubernetes](https://community.dynatrace.com/t5/Container-platforms/Dynatrace-Distributed-Tracing-on-Kubernetes/m-p/245841) — Solved: Hey! I have deployed the Dynatrace operator on Kubernetes (cloud native approach), and I am able to see my Kubernetes cluster on my dashboard.
-- [Kubernetes Tutorial: From Zero to Deployed (100% FREE)](https://www.youtube.com/watch?v=IluVqhoCChw&xstg=CAMSBhUD_LL2Hw%3D%3D) — Kubernetes seems scary? Not anymore. I'll take you from ZERO to deploying your first app - completely FREE. No credit card.
+- [Kubernetes Vulnerability Scanning: Best Practices and Tools](https://www.sentinelone.com/cybersecurity-101/cloud-security/kubernetes-vulnerability-scanning/) — In just 5 years, from 2018 to 2023, the number of vulnerabilities in Kubernetes has increased by 440%.
+- [Kubernetes security advisory (AV25-161) - Update 1](https://www.cyber.gc.ca/en/alerts-advisories/kubernetes-security-advisory-av25-161) — On March 24, 2025, Kubernetes published a security advisory to address critical vulnerabilities in the following product: Kubernetes ingress ...
+- [Kubernetes IngressNightmare Vulnerabilities](https://www.crowdstrike.com/en-us/blog/kubernetes-ingressnightmare-vulnerabilities-key-details/) — On March 24, 2025, security researchers1 disclosed several new vulnerabilities in ingress-nginx, a highly popular Kubernetes ingress controller ...
+- [An Unfixed Kubernetes Man-in-the-Middle Vulnerability ...](https://unit42.paloaltonetworks.com/cve-2020-8554/) — CVE-2020-8554 is a design flaw that allows Kubernetes Services to intercept cluster traffic to any IP address. Users who can manage services can ...
+- [Official CVE Feed](https://v1-32.docs.kubernetes.io/docs/reference/issues-security/official-cve-feed/) — CVE-2019-11254, kube-apiserver Denial of Service vulnerability from malicious YAML payloads, #89535 ; CVE-2020-8552, apiserver DoS (oom), #89378 ; CVE-2020-8551
+- [Critical Arbitrary Code Execution Vulnerability Found in ...](https://snyk.io/blog/critical-arbitrary-code-execution-vulnerability-found-in-kubernetes/) — Kubernetes vulnerability identified as CVE-2018-1002105, We suggest the following patched releases: v1.10.11, v1.11.5, v1.12.3, and v1.13.0-rc. ...
+- [Kubernetes CVEs and Security Vulnerabilities - OpenCVE](https://app.opencve.io/cve/?page=7&vendor=kubernetes) — Explore the latest vulnerabilities and security issues of Kubernetes in the CVE database. v3.1 CVE-2018-1002104 1 Kubernetes. Low Improper validation of URL ...
+- [Top 5 Kubernetes Security Challenges and Best Practices](https://www.mirantis.com/blog/top-5-kubernetes-security-challenges-and-best-practices/)
+- [Identifying Security Vulnerabilities in Kubernetes ...](https://www.sans.org/white-papers/identifying-security-vulnerabilities-kubernetes-environments) — This research aims to develop a practical methodology for identifying security misconfigurations in Kubernetes environments, ...
 <!-- KUBE_CVEs_END -->
 
 ## Learning Context
